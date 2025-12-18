@@ -43,7 +43,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     try:
-        with open('knn_mall_model.pkl', 'rb') as f:
+        with open('knn_mallspend.pkl', 'rb') as f:
             return pickle.load(f)
     except FileNotFoundError:
         return None
